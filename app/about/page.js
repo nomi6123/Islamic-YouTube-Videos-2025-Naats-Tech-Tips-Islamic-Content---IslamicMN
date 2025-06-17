@@ -7,7 +7,6 @@ import { useRef, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Story from "./Story";
 
 export default function About() {
   const { scrollYProgress } = useScroll();
@@ -232,7 +231,7 @@ export default function About() {
         </motion.nav>
 
         {/* Hero Section with Parallax */}
-        <section className="relative bg-gradient-to-r from-black to-purple-800 border-b border-gray-400 py-20 mt-16 overflow-hidden">
+        <section className="relative w-full bg-[url('/her.jpg')] bg-cover bg-center border-b border-gray-400 py-20 mt-16 overflow-hidden">
           <motion.div 
             style={{ y, opacity }}
             className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-black/40"
@@ -320,7 +319,7 @@ export default function About() {
         </motion.section>
 
         {/* My Story Section */}
-        <section className="py-20 bg-gradient-to-r from-purple-800 to-black border-b border-gray-400">
+        <section className="py-20 bg-[url('/heroo.jpg')] bg-cover bg-center border-b border-gray-400">
           <motion.div 
             ref={storyRef}
             variants={containerVariants}
@@ -375,9 +374,9 @@ export default function About() {
             </div>
           </motion.div>
         </section>
-<Story/>
+
         {/* Content Categories Slider */}
-        <section className="py-20 bg-gradient-to-r from-purple-900 to-black/50 border-b border-gray-400">
+        <section className="py-20 bg-[url('/bg.jpg')] bg-cover bg-center border-b border-gray-400">
           <motion.div 
             ref={categoriesRef}
             variants={containerVariants}
@@ -429,7 +428,7 @@ export default function About() {
         </section>
 
         {/* Testimonials Slider */}
-        <section className="py-20 bg-gradient-to-r from-black to-purple-800/50">
+        <section className="py-20 bg-[url('/bgg.jpg')] bg-cover bg-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
@@ -470,7 +469,7 @@ export default function About() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-20 bg-gradient-to-r from-black to-purple-800">
+        <section className="py-20 bg-[url('/key.jpg')] bg-cover bg-center">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}

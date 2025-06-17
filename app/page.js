@@ -83,13 +83,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen bg-black text-white">
+<div className="min-h-screen w-full bg-[url('/her.jpg')] bg-cover bg-center text-white">
         {/* Navbar */}
 
         <Navbar />
 
         {/* Header Section */}
-        <header className="bg-gradient-to-r from-black to-purple-800 shadow-sm shadow-gray-700  py-16">
+        <header className="w-full bg-[url('/her.jpg')] bg-cover bg-center shadow-sm shadow-gray-700  py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in">
               My YouTube Videos
