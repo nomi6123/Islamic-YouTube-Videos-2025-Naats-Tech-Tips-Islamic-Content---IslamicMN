@@ -7,6 +7,7 @@ import { useRef, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Story from "./Story";
 
 export default function About() {
   const { scrollYProgress } = useScroll();
@@ -374,7 +375,7 @@ export default function About() {
             </div>
           </motion.div>
         </section>
-
+<Story/>
         {/* Content Categories Slider */}
         <section className="py-20 bg-gradient-to-r from-purple-900 to-black/50 border-b border-gray-400">
           <motion.div 
@@ -395,33 +396,34 @@ export default function About() {
             
             <motion.div variants={itemVariants}>
               <Slider {...categorySliderSettings}>
-                {contentCategories.map((category, index) => (
-                  <div key={index} className="px-4">
-                    <motion.div 
-                      whileHover={{ scale: 1.02, y: -10 }}
-                      transition={{ type: "spring", stiffness: 300 }}
-                      className="bg-black/70 backdrop-blur-sm rounded-xl p-6 h-80 border border-gray-700 hover:border-purple-500 transition-all duration-300"
-                    >
-                      <motion.div 
-                        whileHover={{ scale: 1.1, rotate: 10 }}
-                        className={`w-16 h-16 bg-gradient-to-r ${category.color} rounded-full flex items-center justify-center text-2xl mb-4`}
-                      >
-                        {category.icon}
-                      </motion.div>
-                      <h3 className="text-xl font-bold text-white mb-3">{category.title}</h3>
-                      <p className="text-gray-300 leading-relaxed mb-4">{category.description}</p>
-                      <div className="space-y-1">
-                        {category.videos.map((video, idx) => (
-                          <div key={idx} className="text-sm text-gray-400 flex items-center">
-                            <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                            {video}
-                          </div>
-                        ))}
-                      </div>
-                    </motion.div>
-                  </div>
-                ))}
-              </Slider>
+  {contentCategories.map((category, index) => (
+    <div key={index} className="px-2 sm:px-4">
+      <motion.div
+        whileHover={{ scale: 1.02, y: -10 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="bg-black/70 backdrop-blur-sm rounded-xl p-4 sm:p-6 min-h-[300px] sm:min-h-[320px] border border-gray-700 hover:border-purple-500 transition-all duration-300 flex flex-col justify-between"
+      >
+        <motion.div
+          whileHover={{ scale: 1.1, rotate: 10 }}
+          className={`w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r ${category.color} rounded-full flex items-center justify-center text-xl sm:text-2xl mb-3 sm:mb-4`}
+        >
+          {category.icon}
+        </motion.div>
+        <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{category.title}</h3>
+        <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4">{category.description}</p>
+        <div className="space-y-1">
+          {category.videos.map((video, idx) => (
+            <div key={idx} className="text-xs sm:text-sm text-gray-400 flex items-center">
+              <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+              {video}
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
+  ))}
+</Slider>
+
             </motion.div>
           </motion.div>
         </section>
