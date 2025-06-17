@@ -8,17 +8,17 @@ export default function Home() {
   const videos = [
     {
       id: "-BopLbG9c4E",
-      title: "Islamic Motivation",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/-BopLbG9c4E",
     },
     {
       id: "qDIazRxKdcg",
-      title: "My First YouTube Video",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/qDIazRxKdcg",
     },
     {
       id: "5QNmrjcV1UI",
-      title: "Another Cool Naat",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/5QNmrjcV1UI",
     },
     {
@@ -28,44 +28,44 @@ export default function Home() {
     },
     {
       id: "WHS6Oq9olqs",
-      title: "Islamic Motivation",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/WHS6Oq9olqs",
     },
     {
       id: "We1oO8Nw_ns",
-      title: "Tech Tips Short",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/We1oO8Nw_ns",
     },
     {
       id: "-bnvv3BKIOlg",
-      title: "My Best Viral Video",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/bnvv3BKIOlg",
     },
 
     {
       id: "PKYpl5_-Wco",
-      title: "My Best Viral Video",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/PKYpl5_-Wco",
     },
 
     {
       id: "-SbniZIRxXI4",
-      title: "My Best Viral Video",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/SbniZIRxXI4",
     },
     {
       id: "MHVWRPKvNTo",
-      title: "My Best Viral Video",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/MHVWRPKvNTo",
     },
     {
       id: "-nwadQNho9qI",
-      title: "My Best Viral Video",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/nwadQNho9qI",
     },
     {
       id: "-WUwqNSE5VUw",
-      title: "My Best Viral Video",
+      title: "Watch on Youtube",
       embedUrl: "https://www.youtube.com/embed/WUwqNSE5VUw",
     },
     // https://youtu.be/nwadQNho9qI https://youtu.be/qDIazRxKdcg
