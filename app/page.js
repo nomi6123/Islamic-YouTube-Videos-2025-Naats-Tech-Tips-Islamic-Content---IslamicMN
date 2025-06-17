@@ -1,6 +1,7 @@
 "use client";
 // pages/index.js
 import Head from "next/head";
+import Navbar from "./Components/Header";
 
 export default function Home() {
   const videos = [
@@ -83,33 +84,8 @@ export default function Home() {
 
       <div className="min-h-screen bg-black text-white">
         {/* Navbar */}
-        <nav className="bg-black  shadow-lg shadow-white border-b border-gray-700 ">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <h1 className="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
-                  IslamicMN
-                </h1>
-              </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="#videos"
-                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                  >
-                    Videos
-                  </a>
-                  <a
-                    href="/about"
-                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                  >
-                    About
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+       
+        <Navbar/>
 
         {/* Header Section */}
         <header className="bg-gradient-to-r from-black to-purple-800 shadow-sm shadow-gray-700  py-16">
