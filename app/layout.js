@@ -20,11 +20,11 @@ export const metadata = {
   openGraph: {
     title: "Islamic YouTube Videos 2025 | Naats, Tech Tips & Islamic Content - IslamicMN",
     description: "Watch free Naats, Islamic teachings & tech videos. Explore top content from IslamicMN in 2025!",
-    url: "https://yourdomain.com", // Replace with your domain
+    url: "https://islamicmn.vercel.app", // Replace with your domain
     siteName: "IslamicMN",
     images: [
       {
-        url: "https://yourdomain.com/og-thumbnail.jpg", // Replace with actual image
+        url: "https://islamicmn.vercel.app/og-thumbnail.jpg", // Replace with actual image
         width: 1200,
         height: 630,
         alt: "IslamicMN YouTube Channel",
@@ -32,7 +32,7 @@ export const metadata = {
     ],
     type: "website",
   },
-  metadataBase: new URL("https://yourdomain.com"), // Your live URL
+  metadataBase: new URL("https://islamicmn.vercel.app"), // Your live URL
 };
 
 export default function RootLayout({ children }) {
